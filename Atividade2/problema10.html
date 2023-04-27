@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    /*Peça para o usuário informar uma data em dias com horas, minutos e segundos e retorne a data em segundos.*/
+
+    //ENTRADA
+    const dias = prompt("Que dia é hoje?")
+    const horario = prompt("Qual o horário nesse momento? (com horas, minutos e segundos separados por dois pontos(:))")
+
+    //PROCESSAMENTO
+    const diasParaSegundos = Number(dias) * 86400
+    const horas = horario.substr(0, 2)
+    const horasParaSegundos = Number(horas) * 3600
+    const minutos = horario.substr(3, 2)
+    const minutosParaSegundos = Number(minutos) * 60
+    const segundos = horario.substr(6, 2)
+    const dataFinal = Number(diasParaSegundos) + Number(horasParaSegundos) + Number(minutosParaSegundos) + Number(segundos)
+
+    //SAÍDA
+    document.write(`A conversão dessa data para segundos é igual a ${dataFinal}s.`)
+
+</script>

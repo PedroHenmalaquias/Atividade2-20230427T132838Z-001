@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<script>
+    /*Peça para o usuário informar um valor em metros. O programa deverá retornar uma mensagem convertendo o valor para milímetros, sabendo que 1 metro equivale a 1000 milímetros.*/
+
+    //ENTRADA
+    const metro = prompt("insira um valor em metros (não use separador de milhar)").replace(",", ".");
+
+    //PROCESSAMENTO
+    const milimetro = Number(metro) * 1000;
+
+    //SAÍDA
+    document.write(`A coversão desse valor é igual a ${milimetro}mm.`);
+</script>
